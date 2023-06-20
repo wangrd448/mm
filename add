@@ -1,0 +1,23 @@
+//
+//  HNTHomeController.m
+//  demo
+//
+//  Created by 东哥 on 2022/4/19.
+//
+
+#import "HNTHomeController.h"
+#import "HNTHomeHeaderView.h"
+#import "HNTHomeCell.h"
+#import "HNTDetailsTabController.h"
+#import <AdSupport/ASIdentifierManager.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+
+@interface HNTHomeController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic ,strong)UITableView         *tabView;
+
+@property (nonatomic ,strong)NSDecimalNumber    *nonceEarnings;
+
+@property (nonatomic ,strong)NSDecimalNumber    *yesEarnings;
+
+@property (nonatomic ,strong)NSArray            *listAccount;
